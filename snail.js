@@ -31,7 +31,8 @@ $(function(){
   });
 });
 function send(data){
-  url = `https://script.google.com/macros/s/AKfycbyWmrsViQknlK5xfrLXmdYA7lFAtucdLjJcm_ckCBBpWZVvCKCS/exec`
+  const cors = 'https://cors-anywhere.herokuapp.com/'
+  url = `${cors}https://script.google.com/macros/s/AKfycbyWmrsViQknlK5xfrLXmdYA7lFAtucdLjJcm_ckCBBpWZVvCKCS/exec`
   $.ajax({
     // 這邊用get type
     type: "get",
